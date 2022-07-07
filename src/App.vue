@@ -1,25 +1,24 @@
 <template>
   <div id="app">
     <PageHeader />
-      <!--<main>
-
-      </main>
-
-      <Footer>-->
+    <MainContent />
+      <!--<Footer>-->
   </div>
 </template>
 
 <script>
 import PageHeader from './components/PageHeader.vue';
+import MainContent from './components/MainContent.vue';
 
 export default {
   name: 'App',
   components: {
-    PageHeader
+    PageHeader,
+    MainContent
   },
 };
 </script>
 
-<style>
+<style lang="scss">
 @import './style/common.scss';
 </style>

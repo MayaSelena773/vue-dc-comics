@@ -30,16 +30,18 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+
+@import '../style/variables.scss';
 
 header {
     display: flex;
-    justify-content: space-between;
-}
-
-header img {
+    justify-content: space-around;
+    align-items: center;
+    img {
     width: 70px;
     display: inline-block;
+    }
 }
 
 .logo {
@@ -52,7 +54,7 @@ nav {
 
 a {
     text-decoration: none;
-    color: black;
+    color: $brand_main_color;
     padding: 20px;
 }
 
