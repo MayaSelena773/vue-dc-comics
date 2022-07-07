@@ -3,7 +3,7 @@
     <PageHeader />
     <MainContent />
     <PageBanner />
-      <!--<Footer>-->
+    <PageFooter />
   </div>
 </template>
 
@@ -11,13 +11,15 @@
 import PageHeader from './components/PageHeader.vue';
 import MainContent from './components/MainContent.vue';
 import PageBanner from './components/PageBanner.vue';
+import PageFooter from './components/PageFooter.vue';
 
 export default {
   name: 'App',
   components: {
     PageHeader,
     MainContent,
-    PageBanner
+    PageBanner,
+    PageFooter
   },
 };
 </script>
