@@ -40,13 +40,14 @@ export default {
 .flex {
     display: flex;
     align-items: center;
-    margin: 10px;
+    margin: 20px;
 }
 
 .banner {
     background-color: $brand_secondary_color;
     display: flex;
     justify-content: center;
+    height: 200px;
 
     img {
         width: 50px;
