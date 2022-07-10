@@ -1,8 +1,10 @@
 <template>
     <footer>
 
-        <section class="lists_container">
-            <!--Left Nav-->
+        <!--Footer Top-->
+        <section class="footer_top">
+            <div class="lists_container">
+                <!--Left Nav-->
                     <div class="nav-list">
                         <h3>dc comics</h3>
                         <ul>
@@ -51,6 +53,16 @@
                             <li>DC Power Visa</li>
                         </ul>
                     </div>
+            </div>
+
+            <div class="padd-img">
+                <img src="../assets/img/dc-logo-bg.png" alt="logobig" class="big-logo">
+            </div>
+        </section>
+
+        <!--Footer Bottom-->
+        <section>
+
         </section>
 
     </footer>
@@ -65,22 +77,33 @@ export default {
 <style lang="scss" scoped>
 
 footer {
-    background-image: url ("footer-bg.jpg");
-    background-size: cover;
-    display: flex;
 
-    .lists_container {
+    .footer_top {
+        background-image: url('../assets/img/footer-bg.jpg');
+        background-size: cover;
+        display: flex;
+        height: 400px;
+        overflow: hidden;
+
+        .big-logo {
+        width: 450px;
+        }
+
+        .lists_container {
         margin-left: 4.5rem;
         display: flex;
         flex-direction: row;
-    }
 
-    .nav-list {
-        margin: 1rem;
-    }
+            .nav-list {
+            margin: 1rem;
+            color: white;
 
-    h3 {
-        margin: 1rem;
+                h3 {
+                margin: 1rem 0;
+                text-transform: uppercase;
+                }
+            }
+        } 
     }
 }
 

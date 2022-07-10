@@ -56,6 +56,7 @@ a {
     text-decoration: none;
     color: $brand_main_color;
     padding: 20px;
+    text-transform: uppercase;
 }
 
 .flex {
